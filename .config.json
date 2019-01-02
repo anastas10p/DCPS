@@ -805,7 +805,7 @@
   "node-red-contrib-git-nodes": {
    "name": "node-red-contrib-git-nodes",
    "version": "0.2.2",
-   "local": false,
+   "local": true,
    "nodes": {
     "git-nodes": {
      "name": "git-nodes",
