@@ -841,7 +841,10 @@
      "view-snap-grid": false,
      "view-show-grid": false
     }
-   }
+   },
+   "menu-deploymenu-item-flow": false,
+   "menu-deploymenu-item-full": false,
+   "menu-deploymenu-item-node": true
   }
  }
 }

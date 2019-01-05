@@ -1,0 +1,6 @@
+var count=context.get('counter') || 0; //create "counter"
+count +=1;
+msg.payload= count;
+context.set('counter',count);
+msg.count = context.get('counter');
+return msg;
