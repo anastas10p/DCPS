@@ -2,5 +2,8 @@ var count=context.get('counter') || 0; //create "counter"
 count +=1;
 msg.payload= count;
 context.set('counter',count);
-msg.count = context.get('counter');
+msg.count = context.get('counter'); 
 return msg;
+
+// save in flow.set -> not just in box but in flow
+// save in all flows -> global.set
