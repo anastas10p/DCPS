@@ -1,0 +1,4 @@
+var x = global.get('flow');
+
+msg.payload =x;
+return msg;

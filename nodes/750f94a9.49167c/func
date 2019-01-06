@@ -1,0 +1,3 @@
+var x = global.get('dur');
+msg.payload = x;
+return msg;

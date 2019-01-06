@@ -1,0 +1,27 @@
+// var declanation
+var t =global.get('temp');
+var d =global.get('flow');
+var x = msg.payload;
+y =context.get('yy') || 0;
+z =context.get('zz') || 0;
+
+//splits string 
+parts = x.split("/");
+
+//get temperature value
+t = parts[1];
+t=t.split(":");
+t=t[1];
+t=t*1;
+
+// get flow rate value
+d =parts[2];
+d=d.split(":");
+d=d[1];
+d=d*1;
+
+// save "t" and "d" globally
+global.set('temp',t);
+global.set('flow',d);
+
+return msg;
