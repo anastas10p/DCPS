@@ -12,23 +12,15 @@ parts = x.split("/");
 t = parts[1];
 t=t.split(":+");
 t=t[1];
-try {
-    y=Integer.parseInt(t);
-} catch (Exception) {
-    y=0
-}
 t=t/10;
 
 // get flow rate value
 d =parts[2];
 d=d.split(":");
 d=d[1];
-try {
-    z=Integer.parseInteger(d);
-} catch (Exception) {
-    z=0;
-}
+d=d*1;
 
+// save "t" and "d" globally
 global.set('temp',t);
 global.set('flow',d);
 

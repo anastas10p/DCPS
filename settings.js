@@ -16,17 +16,18 @@
 
 // The `https` setting requires the `fs` module. Uncomment the following
 // to make it available:
-//var fs = require("fs");
+var fs = require("fs");
 
 module.exports = {
     // the tcp port that the Node-RED web server is listening on
     uiPort: process.env.PORT || 1880,
+    //uiPort: 192.168.1.108 || 1880, // was a try :(
 
     // By default, the Node-RED UI accepts connections on all IPv4 interfaces.
     // To listen on all IPv6 addresses, set uiHost to "::",
     // The following property can be used to listen on a specific interface. For
     // example, the following would only allow connections from the local machine.
-    uiHost: "192.168.1.107",
+    uiHost: "192.168.99.18",
 
     // Retry time in milliseconds for MQTT connections
     mqttReconnectTime: 15000,

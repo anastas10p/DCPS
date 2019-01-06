@@ -1,3 +1,0 @@
-//context.set('YourVariable') = X; // to store
-//var x = context.get('YourVariable'); to retrieve
-return msg;
