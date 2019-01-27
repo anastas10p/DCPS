@@ -2,6 +2,7 @@
 var t =global.get('temp');
 var d =global.get('flow');
 var x = msg.payload;
+var parts =global.get('part');
 y =context.get('yy') || 0;
 z =context.get('zz') || 0;
 
@@ -9,7 +10,7 @@ z =context.get('zz') || 0;
 parts = x.split("/");
 
 //get temperature value
-t = parts[1];
+t= parts[1];
 t=t.split(":");
 t=t[1];
 t=t*1;
@@ -21,7 +22,7 @@ d=d[1];
 d=d*1;
 
 // save "t" and "d" globally
-global.set('temp',t);
+global.set('part',parts);
 global.set('flow',d);
 
 return msg;

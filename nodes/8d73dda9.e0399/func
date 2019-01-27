@@ -9,13 +9,13 @@ z =context.get('zz') || 0;
 parts = x.split("/");
 
 //get temperature value
-t = parts[1];
-t=t.split(":+");
+t = parts[0];
+t=t.split(":");
 t=t[1];
-t=t/10;
+t=t*1;
 
 // get flow rate value
-d =parts[2];
+d =parts[1];
 d=d.split(":");
 d=d[1];
 d=d*1;
