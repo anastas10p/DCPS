@@ -1,27 +1,32 @@
 // var declanation
 var t =global.get('temp');
 var d =global.get('flow');
+var r =global.get('rotationspeed');
 var x = msg.payload;
 y =context.get('yy') || 0;
 z =context.get('zz') || 0;
 
 //splits string 
-parts = x.split("/");
+parts = x.split(";");
 
 //get temperature value
 t = parts[0];
 t=t.split(":");
 t=t[1];
-t=t*1;
 
 // get flow rate value
-d =parts[1];
-d=d.split(":");
-d=d[1];
-d=d*1;
+d = parts[1];
+d = d.split(":");
+d = d[1];
+
+// get rotation speed value
+r = parts[2];
+r = r.split(":");
+r = r[1];
 
 // save "t" and "d" globally
 global.set('temp',t);
 global.set('flow',d);
+global.set('rotationspeed',r);
 
 return msg;
