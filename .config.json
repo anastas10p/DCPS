@@ -2,7 +2,7 @@
  "nodes": {
   "node-red": {
    "name": "node-red",
-   "version": "0.19.5",
+   "version": "0.19.6",
    "local": false,
    "nodes": {
     "sentiment": {

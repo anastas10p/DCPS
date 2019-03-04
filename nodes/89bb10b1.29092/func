@@ -1,0 +1,4 @@
+var x = global.get('event');
+
+msg.payload =x;
+return msg;
