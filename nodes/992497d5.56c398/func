@@ -9,7 +9,7 @@ var e = global.get('event');
 var x = msg.payload;
 
 //splits string 
-parts = x.split(" ");
+parts = x.split(";");
 
 //get error value
 f = parts[1];
