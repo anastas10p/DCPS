@@ -2,7 +2,7 @@
  "nodes": {
   "node-red": {
    "name": "node-red",
-   "version": "0.19.5",
+   "version": "0.19.6",
    "local": false,
    "nodes": {
     "sentiment": {
@@ -844,7 +844,8 @@
    },
    "menu-deploymenu-item-flow": false,
    "menu-deploymenu-item-full": false,
-   "menu-deploymenu-item-node": true
+   "menu-deploymenu-item-node": true,
+   "menu-menu-item-sidebar": true
   }
  }
 }

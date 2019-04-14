@@ -1,0 +1,3 @@
+var x = global.get('proc');
+msg.payload = x;
+return msg;

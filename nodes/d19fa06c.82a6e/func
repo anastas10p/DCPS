@@ -1,3 +1,0 @@
-var x = global.get('part');
-msg.payload = x;
-return msg;

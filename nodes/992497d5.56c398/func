@@ -1,27 +1,46 @@
 // var declanation
-var t =global.get('temp');
-var d =global.get('flow');
+var f = global.get('error');
+var t = global.get('temp');
+var d = global.get('flow');
+var ds = global.get('dist');
+var e = global.get('event');
+
+// declaration of msg.payload
 var x = msg.payload;
-y =context.get('yy') || 0;
-z =context.get('zz') || 0;
 
 //splits string 
-parts = x.split("/");
+parts = x.split(";");
+
+//get error value
+f = parts[1];
+f = f.split(":");
+f = f[1];
 
 //get temperature value
-t = parts[1];
-t=t.split(":+");
-t=t[1];
-t=t/10;
+t = parts[2];
+t = t.split(":");
+t = t[1];
 
 // get flow rate value
-d =parts[2];
-d=d.split(":");
-d=d[1];
-d=d*1;
+d = parts[3];
+d = d.split(":");
+d = d[1];
 
-// save "t" and "d" globally
+// get distance value
+ds = parts[4];
+ds = ds.split(":");
+ds = ds[1];
+
+// get event value
+e = parts[5];
+e = e.split(":");
+e = e[1];
+
+// save e,t,d globally
+global.set('error',f);
 global.set('temp',t);
 global.set('flow',d);
+global.set('dist',ds);
+global.set('event',e);
 
 return msg;

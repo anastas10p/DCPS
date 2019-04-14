@@ -1,0 +1,3 @@
+var x = global.get('dist');
+msg.payload = x;
+return msg;
